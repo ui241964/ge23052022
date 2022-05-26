@@ -268,9 +268,223 @@ read operation
 
 - reading line by line using file object
 - using fobj.read()
-- using fobj.readlines()
+- using fobj.readlines()  -------> list 
 - using csv library
 - using pandas library
+
+
+
+
+
+function | definition | submodule | subroutine
+
+- reusability purpose
+- we define the block once and call it for multiple times
+
+user defined functions 
+------------------------
+
+
+
+passing arugments
+----------------
+
+fixed arguments
+default arguments
+keyword arguments
+variable length arguments
+
+
+
+
+
+
+library | module | package 
+---------------------------
+Every library contains set of methods which are used perform some specific task.
+
+math library contains all the methods related to mathematics
+csv library contains all the csv related methods.
+
+
+- builtin libraries  ( with anaconda almost 8000+ packages are installed )  ( with IDLE tool 3000+ packages are installed)
+----------------------
+All the builin libraries which are generally used (math operations, OS opertions, emaling , string manipulations, extracting files using zip rar , copying files, moving files ....)   are installed with python installation
+
+
+
+- third party libraries
+--------------------------
+Depending on the requirement ( working with docx,pdf, data analytics, image processing, database programming , cloud automation , machine learning ...)developer has to install the third party library from
+
+
+- using pip tool  ( pip install libraryname)
+- using conda tool ( comes only with anaconda software) ( conda install libraryname)
+- installing manually by downloading from www.pypi.org
+
+
+
+whoami    os.getlogin()
+
+
+
+re    - regular expressions   (global concept for all the languages ) 
+----
+
+
+- search in the string ( anywhere in the string)
+- match ( beginning of the string)
+- sub   ( substitute )
+- findall  ( loook for all the patterns)
+- split    ( split the strin based on pattern )
+
+
+meta characters  or wild card characters
+-------------------------------------------------
+
+^ :  match at the beginning of the string
+     if re.search("^python", line):
+
+
+$  : end of the string
+     if re.search("python$", line):
+
+
+*  : zero or more occurences of hte preceding character
+     if re.search("pyt*hon", line):  ( t can be zero times )
+
++  : one or more occurences of the preceding character
+     if re.search("pyt+hon", line):   ( t should exist for atleast once )
+
+? : either zero or one occurence of the preceding character
+    if re.search("pyt?hon", line):
+
+. :  any single character
+     if re.search(".ython", line):
+
+[] :  character class  ( one single character or digit or symbol )
+     if re.search("[qwdrm]ython", line):   # qython or wython or dython or rython or mython
+
+
+
+() :  (string1|string2)
+     if re.search("python|unix|java", line):
+
+
+{}  : {min,max} occurences of the preceding character
+      if re.search("pyt{5,9}hon", line): 
+      if re.search("pyt{5,}hon", line): 
+      if re.search("pyt{5}hon", line):
+
+
+\d :  digit
+\s : any whitespaces
+\w : word boundary
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
