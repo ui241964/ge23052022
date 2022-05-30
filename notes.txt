@@ -328,7 +328,7 @@ whoami    os.getlogin()
 
 
 
-re    - regular expressions   (global concept for all the languages ) 
+re    - regular expressions   (universal concept for all the languages ) 
 ----
 
 
@@ -385,44 +385,131 @@ $  : end of the string
 
 
 
+ Write a Python program to display all the files and directories from the current directory.
 
+------------------------------------------------------------------------------------------------
 
+Write a Python program to display ONLY .py that are existing in the current directory.
+------------------------------------------------------------------------------------------------
+Write a Python program to display ONLY .py files and its size as below from the current directory with proper formatting.
 
+Sample output:
+update_customer.py   108 bytes
+customer_info.py      45 bytes
+remote_server.py      49 bytes
 
+------------------------------------------------------------------------------------------------
+Write a Python program to display all the files and folders separately and its count also.
 
+files
+------
+file1
+file2
+file3
 
+Total no. of files : 504
 
+directories
+------------
+dir1
+dir2
+dir3
 
+------------------------------------------------------------------------------------------------
+Write a Python program to display the below information.
 
+display the current user name
+display current working directory
+display Operating system name
+display process id of your running program
+display the current timestamp
+display yesterday’s date
+display tomorrow’s date
+display all the environment variables that are existing
+display the python executable path ( just like ‘which python3’ in Linux )
 
+------------------------------------------------------------------------------------------------
 
+Write a Python program to display the below information.
+– disk utilization of C:\ ( total , used and free space)
+– disk utilization of \tmp ( if using linux)
+– display CPU utilization
+– display Memory utilization
 
+------------------------------------------------------------------------------------------------
 
+Write a Python program to create 100 directories in the current directory.
 
+------------------------------------------------------------------------------------------------
 
+import filecmp
 
+ Write a Python to compare 2 directories ( Eg: C:\python36 and c:\python27 ) and display the below information
 
+-all the common files present in C:\python36 and C:\python27
+-all the distinct files present in both C:\python36 and C:\python27
+-all the files present in C:\python36
+-all the files present in C:\python27
 
+------------------------------------------------------------------------------------------------
 
+create 2 directories in your current working directory
 
+source      :  ( copy few files to the source directory)
+destination :  ( will be empty )
 
+write a program to copy all the files from source directory to destination directory
 
+------------------------------------------------------------------------------------------------
 
+Write a Python program to delete all the .csv files from the current directory 
 
+------------------------------------------------------------------------------------------------
 
 
+Write a Python program to delete all the files from the current directory that are older than 10 days.
 
 
 
 
+display all the existing databases
+--------------------------------
+show databases ;
 
+creating database
+-----------------
+create database ge;
 
+access your database
+------------------------
+use ge;
 
+display tables
+------------------
+show tables ;
 
+create table
+--------------
+create table realestate ( street varchar(100) , city varchar(100) ) ;
 
+inserting records
+-------------------
+insert into realestate values('Hitechcity','Hyderabad');
+insert into realestate values('Kondapur','Hyderabad');
+insert into realestate values('MG Road','Bangalore');
 
 
+display all the records
+-----------------------
+select * from realestate;
 
+steps
+---------------
+connect
+prepare your query
+execute
+fetch data
+close
 
 
 
@@ -457,6 +544,154 @@ $  : end of the string
 
 
 
+
+builtin libraries which are generally used
+----------------------------------------
+sys           : system python config information
+urllib.request: working with http
+math          : mathematical operations
+random        : random numbers
+calendar
+smtplib       : sending mails
+ftplib        : ftp'ng the file
+telnetlib     :
+logging       : logging all the events
+shutil        : copy,move,rmtree ....
+filecmp       : comparing directories
+zipfile       : create/extract the zip files
+rarfile       : create/extract the tar files
+tarfile       : create/extract the tarfiles
+getpass       : shadowing the password
+json          : reading/writing json files
+csv           : reading/writing csv files
+xml        
+sysconfig     : system configuration
+collections   : working with dictionaries
+argparse      : passing args from command line
+optparse      : passing args from command line
+time          : working with date and time
+datetime      : working with date and time
+cryptography  : encrypting and decrypting the passwords
+heapq         : performing array operations
+gzip          : reading gunzip files
+re            : validating the strings
+ipadresss     : validting ip address
+platform      : display platform information
+pathlib       : creating temp files
+threading     : for performing multi threading
+multiprocessing:
+subprocess    : invoking the system commands ( linux or dos commands)
+
+
+
+frequently used third party libraries
+---------------------------------------
+database related
+----------------
+pymysql   :
+cx_Oracle
+pymongo
+pymssql
+
+web frameworks ( developing web applications)
+--------------
+django
+flask
+bottom
+
+analytics/machine learning
+---------------------------
+numpy
+scipy
+pandas
+seaborn
+plotly
+ggplot
+matplotlib   : visualizing data .. bar graph.. pie graph
+scikit-learn :  machine learning algorithms
+
+image processing
+---------------
+pillow
+opencv
+pytorch
+
+
+APIs ( REST API)
+-----
+requests
+
+excel programming
+------------------
+openpyxl    : reading/write excel files
+xlsxwriter  : writing to excel file
+python-docx : working with ms-word
+pandas
+
+networking
+-----------
+paramiko   :  interacting with remote servers
+netmiko    :  connecting to router/switch
+pyping     :  ping any host or ip address
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+write a program to read 'realestate.csv' and insert street and city columns data to the database
+
+---------------------------------------------------------------------------------------------------------
+
+step1 :
+create table in database(mysql command prompt) with all the column names from the header of realestate 
+
+step2 :
+write a program to insert all the records from realestate.csv to the database with proper exception handling and validations
+
+- use exception handling
+- check for existnece of the  realestate.csv file
+- check the size of the file
+- check whether the current directory exists or not
+
+
+---------------------------------------------------------------------------------------------------------
+
+write a program to read all the records from the database( which we have created ) and write the output
+to the csv file (  26_May_2022.csv )
+
+- use exception handling
+- check for existnece of the  realestate.csv file
+- if 26_May_2022.csv is already exist .. delete it first
+- check whether the current directory exists or not
 
 
 
