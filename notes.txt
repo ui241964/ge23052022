@@ -735,6 +735,20 @@ to the csv file (  26_May_2022.csv )
 
 
 
+procedural programming ( top-down programming)
+
+object oriented programming ( based on objects )
+---------------------------------------------------
+- reusability
+
+
+class
+object
+self
+inheritance
+polymorphism
+- function overloading
+- operator overloading
 
 
 
@@ -750,8 +764,20 @@ to the csv file (  26_May_2022.csv )
 
 
 
+class
+-----
+class is just like blueprint of the model.
+Every class contains data members and member functions(methods)
 
 
+object
+------
+object is instance of the class.
+
+
+self
+-----
+self is the instance of object
 
 
 
